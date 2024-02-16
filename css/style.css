@@ -1,0 +1,751 @@
+/* navbar section */
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+.mybg{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  position: relative;
+  overflow: hidden;
+}
+/* .navbar-nav .nav-link.active{
+  color: aquamarine !important;
+}  */
+  .navbar-expand-lg .navbar-nav .nav-link.active::after{
+    left: 25%;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link::after{
+    transition: all 0.6s;
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 60%;
+    background-color: white;
+    bottom: 0%;
+    left: -100%;
+  } 
+/* .menu > li::after{
+  transition: all 0.6s;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  left: 15%;
+} 
+.menu > li:hover::after{
+  width: 60%;
+} */
+.submenu a{
+  text-decoration: none;
+}
+.submenu{
+  display: none;
+}
+.menu li:hover .submenu{
+  display: block;
+}
+.submenu li a {
+  color: #4E4E4E;
+  font-weight: 400;
+  font-size: 15px;
+}
+.submenu li a:hover{
+  color: #0078FF;
+}
+.submenu2{
+  display: none;
+}
+.submenu li:hover .submenu2{
+  display: block;
+}
+
+/* icon section */
+#icon a{
+  width: 40px;
+  height: 40px;
+}
+#icon a:hover{
+  background-color: #0077fffa !important;
+}
+/* home section */
+.home{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.home .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.row h1{
+    color: white;
+    font-size: 65px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.ani::after{
+    content: "|";
+    animation-name: typing;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+@keyframes typing {
+    0% {
+      content: "D|";
+    }
+  
+    1.11% {
+      content: "De|";
+    }
+  
+    2.22% {
+      content: "Des|";
+    }
+  
+    3.33% {
+      content: "Desi|";
+    }
+  
+    4.44% {
+      content: "Desig|";
+    }
+  
+    5.55% {
+      content: "Design|";
+    }
+  
+    6.66% {
+      content: "Designe|";
+    }
+  
+    7.77% {
+      content: "Designer|";
+    }
+  
+    8.88% {
+      content: "Designer";
+    }
+  
+    9.99% {
+      content: "Designer|";
+    }
+  
+    11.10% {
+      content: "Designer";
+    }
+  
+    12.21% {
+      content: "Designer|";
+    }
+  
+    15.54% {
+      content: "Designe|";
+    }
+  
+    16.55% {
+      content: "Design|";
+    }
+  
+    17.67% {
+      content: "Desig|";
+    }
+  
+    18.78% {
+      content: "Desi|";
+    }
+  
+    19.89% {
+      content: "Des|";
+    }
+  
+    20% {
+      content: "De|";
+    }
+  
+    21.11% {
+      content: "Dev|";
+    }
+  
+    22.22% {
+      content: "Deve|";
+    }
+  
+    23.33% {
+      content: "Devel|";
+    }
+  
+    24.44% {
+      content: "Develo|";
+    }
+  
+    25.55% {
+      content: "Develop|";
+    }
+  
+    26.66% {
+      content: "Develope|";
+    }
+  
+    27.77% {
+      content: "Developer|";
+    }
+  
+    28.88% {
+      content: "Developer";
+    }
+  
+    29.99% {
+      content: "Developer|";
+    }
+  
+    31.10% {
+      content: "Developer";
+    }
+  
+    32.21% {
+      content: "Developer|";
+    }
+  
+    33.32% {
+      content: "Develope|";
+    }
+  
+    34.43% {
+      content: "Develop|";
+    }
+  
+    35.54% {
+      content: "Develo|";
+    }
+  
+    36.65% {
+      content: "Devel|";
+    }
+  
+    37.76% {
+      content: "Deve|";
+    }
+  
+    38.87% {
+      content: "Dev|";
+    }
+  
+    39.98% {
+      content: "De|";
+    }
+  
+    40.99% {
+      content: "D|";
+    }
+  
+    42.10% {
+      content: "|";
+    }
+  
+    43.21% {
+      content: "F|";
+    }
+  
+    44.32% {
+      content: "Fr|";
+    }
+  
+    45.43% {
+      content: "Fre|";
+    }
+  
+    46.54% {
+      content: "Frel|";
+    }
+  
+    47.65% {
+      content: "Frela|";
+    }
+  
+    48.76% {
+      content: "Frelan|";
+    }
+  
+    49.87% {
+      content: "Frelanc|";
+    }
+  
+    50.98% {
+      content: "Frelance|";
+    }
+  
+    52.20% {
+      content: "Frelancer|";
+    }
+  
+    53.31% {
+      content: "Frelancer";
+    }
+  
+    54.42% {
+      content: "Frelancer|";
+    }
+  
+    55.53% {
+      content: "Frelancer";
+    }
+  
+    56.64% {
+      content: "Frelancer|";
+    }
+  
+    57.75% {
+      content: "Frelance|";
+    }
+  
+    58.86% {
+      content: "Frelanc|";
+    }
+  
+    59.95% {
+      content: "Frelan|";
+    }
+  
+    61.06% {
+      content: "Frela|";
+    }
+  
+    62.17% {
+      content: "Frel|";
+    }
+  
+    63.28% {
+      content: "Fre|";
+    }
+  
+    64.39% {
+      content: "Fr|";
+    }
+  
+    65.50% {
+      content: "F|";
+    }
+  
+    66.61% {
+      content: "|";
+    }
+  
+    67.72% {
+      content: "P|";
+    }
+  
+    68.83% {
+      content: "Ph|";
+    }
+  
+    69.94% {
+      content: "Pho|";
+    }
+  
+    71.05% {
+      content: "Phot|";
+    }
+  
+    72.16% {
+      content: "Photo|";
+    }
+  
+    73.27% {
+      content: "Photog|";
+    }
+  
+    74.38% {
+      content: "Photogr|";
+    }
+  
+    75.49% {
+      content: "Photogra|";
+    }
+  
+    76.60% {
+      content: "Photograp|";
+    }
+  
+    77.71% {
+      content: "Photograph|";
+    }
+  
+    78.82% {
+      content: "Photographe|";
+    }
+  
+    80% {
+      content: "Photographer|";
+    }
+  
+    81.5% {
+      content: "Photographer";
+    }
+  
+    82.5% {
+      content: "Photographer|";
+    }
+  
+    83.5% {
+      content: "Photographer";
+    }
+  
+    84% {
+      content: "Photographer|";
+    }
+  
+    85% {
+      content: "Photographe|";
+    }
+  
+    86% {
+      content: "Photograph|";
+    }
+  
+    87% {
+      content: "Photograp|";
+    }
+  
+    88% {
+      content: "Photogra|";
+    }
+  
+    89% {
+      content: "Photogr|";
+    }
+  
+    91% {
+      content: "Photog|";
+    }
+  
+    92.5% {
+      content: "Photo|";
+    }
+  
+    94% {
+      content: "Phot|";
+    }
+  
+    95.5% {
+      content: "Pho|";
+    }
+  
+    97% {
+      content: "Ph|";
+    }
+  
+    98.5% {
+      content: "P|";
+    }
+  
+    100% {
+      content: "|";
+    }
+  }
+/* about section  */
+#about{
+  background-color: #F5F5F5;
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+ #about p{
+    color: rgb(78, 78, 78);
+    font-size: 20px;
+    font-weight: 300;
+}
+.progress{
+    background-color: #cde1f8;
+}
+#about h2{
+    font-weight: 600;
+}
+#about h3{
+    font-weight: 600;
+}
+.imgh img {
+  height: fit-content;
+  width: fit-content;
+}
+#about .color p{
+  color: black;
+  font-size: 18px;
+  font-weight: 300;
+}
+#about .styleit{
+  position: relative;
+}
+.styleit::after{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #0078FF;
+  top:85%;
+  left: 0;
+}
+/* services section */
+#services{
+  background-color: #F5F5F5;
+}
+#services .icon{
+  width: 120px;
+  height: 120px;
+  border-width: 10px !important;
+   font-size: 40px;
+   transition: all 0.5s;
+}
+.layer:hover .icon{
+  color: white;
+  background-color: #0078ff;
+  border-color:  #CDE1F8 !important;
+}
+#services .layer h3{
+  font-size: 22px;
+  font-weight: 600;
+}
+#services p{
+  color:#4E4E4E;
+}
+#services h2{
+  font-size: 48px;
+  font-weight: 700;
+}
+#services .aft{
+  position: relative;
+  padding-bottom: 15px;
+}
+#services .aft::after{
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 5px;
+  top: 100%;
+  left: 49%;
+  background-color: #0078ff;
+}
+/* numbers section */
+#numbers{
+  background-image: url(../images/counters-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+}
+#numbers .overlay{
+  background-color:hsl(212, 100%, 50%, 0.7);
+  background-attachment: fixed;
+  height: 100%;
+}
+#numbers .icon-num{
+  border-width: 10px !important;
+  width: 80px;
+  height: 80px;
+  border-color: #CDE1F8 !important;
+  font-size: 25px;
+}
+#numbers h4{
+  font-size: 32px;
+}
+/* portfolio section */
+#portfolio{
+  background-color: #F5F5F5;
+}
+#portfolio h2{
+  font-size: 48px;
+  font-weight: 700;
+}
+#portfolio .aft-2{
+  font-size: 16px;
+  position: relative;
+  padding-bottom: 15px;
+  color:#4E4E4E;
+}
+#portfolio .aft-2::after{
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 5px;
+  top: 100%;
+  left: 49%;
+  background-color: #0078ff;
+}
+#portfolio .icon-pro{
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+}
+#portfolio p{
+  font-size: 13px;
+}
+#portfolio h5{
+  font-weight: 600;
+}
+ #portfolio .card img{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+ #portfolio .card:hover img{
+  transform: scale(1.1);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+/* blog section */
+#blog{
+  background-color: #F5F5F5;
+  padding-bottom: 80px !important;
+}
+#blog h2{
+  font-size: 48px;
+  font-weight: 700;
+}
+#blog .card-footer img{
+  width: 35px;
+  height: 35px;
+}
+#blog .caption{
+  width: 75px;
+  height: 30px;
+  font-size: 12px;
+}
+#blog .caption-1{
+  width: 95px;
+  height: 30px;
+  font-size: 12px;
+}
+#blog .caption-2{
+  width: 95px;
+  height: 30px;
+  font-size: 12px;
+}
+#blog .aft-3{
+  position: relative;
+  padding-bottom: 15px;
+  color:#4E4E4E;
+}
+#blog .aft-3::after{
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 5px;
+  top: 100%;
+  left: 49%;
+  background-color: #0078ff;
+}
+/* contact section */
+#contact{
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+#contact .overlay{
+  background-color:hsl(212, 100%, 50%, 0.7);
+  height: 100%;
+}
+#contact .overlay .container{
+  height: 100%;
+}
+#contact .icons .icon{
+  width: 45px;
+  height: 45px;
+}
+#contact p{
+  font-size: 20px;
+  font-weight: 300;
+  color: RGB(78, 78, 78);
+}
+#contact li{
+  color: RGB(78, 78, 78);
+}
+#contact .icons .icon{
+  font-size: 20px;
+  transition: all 0.5s;
+}
+#contact .icons .icon a{
+  transition: all 0.5s;
+}
+#contact .icons .icon:hover{
+  background-color: #0078FF;
+  border-color: #CDE1F8 !important;
+  color: white;
+}
+#contact .icons .icon:hover a{
+  color: white !important;
+}
+#contact h5{
+  font-size: 32px;
+  position: relative;
+}
+#contact h5::after{
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: #0078FF;
+  top:85%;
+  left: 0;
+}
+#contact form input::placeholder{
+  font-weight: 200;
+} 
+#contact form textarea::placeholder{
+  font-weight: 200;
+}
+#contact form button:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 5px rgba(205,225,248,0.61);
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(205,225,248,0.61);
+  -moz-box-shadow: 0px 0px 0px 5px rgba(205,225,248,0.61);
+  background-color: #0077fffa;
+}
+/* footer section */
+#footer{
+  background-color: #0062D3;
+}
+/* testimonial section */
+#testimonial{
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80vh;
+}
+#testimonial .overlay-test{
+  background-color:hsl(212, 100%, 50%, 0.7);
+  background-attachment: fixed;
+  height: 80vh;
+}
+#testimonial .overlay-test .container{
+  height: 80vh;
+}
+.carousel-indicators [data-bs-target]{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+#testimonial .overlay-test .container p{
+  font-size: 20px;
+  font-weight: 300;
+  width: 90%;
+}

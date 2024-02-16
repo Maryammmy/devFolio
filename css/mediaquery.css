@@ -1,0 +1,107 @@
+@media (max-width:575px) {
+   /* services section */
+    *{
+        margin: 0% !important;
+    }
+   #numbers{
+    height: 100vh;
+   }
+   #contact{
+    height: 150vh !important;
+   } 
+    #contact .overlay .container .row{
+       width: 90% !important;
+       padding: 20px 0 !important;
+    }
+   #blog{
+     padding-bottom: 50px !important;
+   }
+   #blog .card{
+    margin-bottom: 20px !important;
+   }
+    #portfolio .col-md-4{
+    margin-bottom: 20px !important;
+    padding: 0;
+   }
+    #portfolio .aft-2 {
+       width: 400px;
+   }
+     #contact h5{
+    padding-top: 10px;
+   }
+   .menu{
+    background-color: white;
+   }
+   .menu li a{
+    color: black !important;
+    font-weight: 400;
+   }
+   .submenu2{
+    left: 50% !important;
+    top: 40% !important;
+   }
+   
+} 
+@media (min-width:576px) and (max-width:767px) {
+    .card-group {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact{
+        height: 150vh !important;
+       }
+       #contact .overlay .container .row{
+           width: 95% !important;
+           padding: 20px 0 !important;
+       }
+       #blog{
+        padding-bottom: 50px !important;
+      }
+      .menu{
+        background-color: white;
+       }
+       .menu li a{
+        color: black !important;
+        font-weight: 400;
+       }
+       .submenu2{
+        left: 50% !important;
+        top: 40% !important;
+       }
+}
+@media (min-width:768px) and (max-width:991px) {
+     #portfolio .icon-pro{
+        margin-top: 50px;
+     }
+     #portfolio h5{
+        width: 90%;
+    }
+    .card-footer{
+        flex-wrap: wrap;
+    }
+    .menu{
+        background-color: white;
+       }
+       .menu li a{
+        color: black !important;
+        font-weight: 400;
+       }
+       #contact .overlay .container .row{
+        width: 98% !important;
+}
+.submenu2{
+    left: 50% !important;
+    top: 40% !important;
+   }
+} 
+@media (min-width:992px) and (max-width:1199px) {
+    #portfolio .icon-pro{
+        margin-top: 20px;
+     }
+     #portfolio h5{
+        width: 90%;
+    }
+    #contact .overlay .container .row{
+        width: 98% !important;
+}
+}
